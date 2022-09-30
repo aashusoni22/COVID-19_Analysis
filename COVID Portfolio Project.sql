@@ -188,6 +188,7 @@ WHERE continent IS NULL
 GROUP BY location
 --ORDER BY Total_Death_Count DESC
 
+
 CREATE VIEW TotalFullyVaccinatted AS
 SELECT dea.continent, dea.location, dea.date, dea.population, vac.people_fully_vaccinated, SUM(CAST(vac.people_fully_vaccinated AS BIGINT)) OVER (PARTITION BY dea.location ORDER BY dea.location, dea.date) AS RollingPeopleVaccinated
 FROM PortfolioProject..CovidDeaths AS dea

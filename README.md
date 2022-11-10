@@ -1,4 +1,4 @@
-# COVID-19-Portfolio-Project
+# COVID19-Portfolio-Project
 
 ## Image:
 
